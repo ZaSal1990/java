@@ -5,9 +5,9 @@ public class OperatorChallenge {
         double myDoubleTwo = 80.0;
         double result = (myDoubleOne + myDoubleTwo) * 100;
         double myRemainder = result % 40.0;
-        boolean myBoolean = true ? true : false;
-        System.out.println(myBoolean);
-         if (!myBoolean) {
+        boolean isRemainder = (myRemainder == 0) ? true : false;
+        System.out.println(myRemainder);
+         if (!isRemainder) {
              System.out.println("Got some remainder");
          }
 
