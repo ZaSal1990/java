@@ -2,8 +2,9 @@
 public class displayHighScorePosition {
 
     public static void main (String[] args) {
-        displayHighScorePosition("Zahra", 2);
-        System.out.println(calculateHighScorePosition(1500));
+        int scoreGameOne = calculateHighScorePosition(1500);
+        displayHighScorePosition("Zahra", scoreGameOne);
+
     }
 
     public static void displayHighScorePosition(String playerOne, int playerPosition) {
