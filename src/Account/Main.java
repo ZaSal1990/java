@@ -3,8 +3,12 @@ package Account;
 public class Main {
 
     public static void main(String[] args) {
+    bankAccount account = new bankAccount();
+    account.setBalance(1000);
+    System.out.println("Current balance: " + account.getBalance());
 
     }
+
 
     public static class bankAccount {
         private double accountNumber;
