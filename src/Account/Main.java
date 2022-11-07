@@ -47,5 +47,14 @@ public class Main {
             return  phoneNumber = number;
         }
 
+        public double depositFunds (double increment) {
+            return balance += increment;
+        }
+        public double withdrawFunds (double decrement) {
+            if (balance > decrement)
+            return balance -= decrement;
+            else System.out.println("Insufficient balance!");
+            return 0;
+        }
     }
 }
