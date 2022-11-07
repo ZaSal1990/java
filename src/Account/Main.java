@@ -1,12 +1,17 @@
 package Account;
 
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
     bankAccount account = new bankAccount();
+    System.out.println("Enter 1 to check current balance:"); //add actions for withdraw and deposit, use switch case and while loop
+        Scanner scanner = new Scanner(System.in);
+        int actionNumber = scanner.nextInt();
     account.setBalance(1000);
     System.out.println("Current balance: " + account.getBalance());
-
     }
 
 
