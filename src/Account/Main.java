@@ -30,5 +30,22 @@ public class Main {
         public double getPhoneNumber (){
             return phoneNumber;
         }
+
+        public double setAccountNumber (double number) {
+           return  accountNumber = number;
+        }
+        public double setBalance (double number) {
+            return  balance = number;
+        }
+        public String setCustomerName (String text) {
+            return customerName = text;
+        }
+        public String setEmail (String text) {
+            return  email = text;
+        }
+        public double setPhoneNumber (double number) {
+            return  phoneNumber = number;
+        }
+
     }
 }
