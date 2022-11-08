@@ -6,14 +6,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    bankAccount account = new bankAccount();
-    System.out.println("Enter 1 to check current balance:"); //add actions for withdraw and deposit, use switch case and while loop
+        bankAccount account = new bankAccount();
+        //add actions for withdraw and deposit, use switch case and while loop
         Scanner scanner = new Scanner(System.in);
-        int actionNumber = scanner.nextInt();
-    account.setBalance(1000);
-    System.out.println("Current balance: " + account.getBalance());
+        int actionNumber = 0;
+        while (actionNumber != 9) {
+            System.out.println("Enter: \n1: Deposit funds\n2: Check balance\n9: Exit");
+            actionNumber = scanner.nextInt();
+            if (actionNumber == 1) {
+                System.out.println("Enter amount to deposit:");
+                double number = scanner.nextInt();
+                account.depositFunds(number);
+                System.out.println("Current balance: $" + account.getBalance());
+            }
+        }
+        scanner.close();
+        System.out.println("Thank you for choosing us!");
     }
-
 
     public static class bankAccount {
         private double accountNumber;
@@ -21,6 +30,11 @@ public class Main {
         private String customerName;
         private String email;
         private double phoneNumber;
+
+        public double intToDouble(int number) {
+             double newDouble = number;
+             return newDouble;
+        }
 
 
         public double getAccountNumber() {
